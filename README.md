@@ -19,3 +19,4 @@ The site is prepared for `https://morningstar-ef.org`, with Nginx serving the fr
 
 Keep real values in local/server `.env` files, which are ignored by Git. Resend and Cloudinary credentials must remain backend-only. The frontend may use public Cloudinary delivery URLs after assets are approved and uploaded.
 # msef
+# msef
