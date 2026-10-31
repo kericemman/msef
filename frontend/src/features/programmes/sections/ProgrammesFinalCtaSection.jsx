@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Icon from "../../../components/Icon.jsx";
 
 export default function ProgrammesFinalCtaSection() {
   return (
@@ -20,7 +21,7 @@ export default function ProgrammesFinalCtaSection() {
           to="/contact"
           className="inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-[#DAA520] px-6 py-3.5 text-sm font-bold text-[#001F3F] transition-colors hover:bg-[#edbd42] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
         >
-          Contact the Foundation <span aria-hidden="true">↗</span>
+          Contact the Foundation <Icon name="arrow-up-right" size={16} />
         </Link>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import media from "../../../content/media-library.json";
 import Arrow from "../../../components/Arrow.jsx";
+import Icon from "../../../components/Icon.jsx";
 
 export default function HeroSection() {
   const heroImage = media.assets.find((asset) => asset.id === "MSEF-13");
@@ -30,7 +31,7 @@ export default function HeroSection() {
             Explore our programmes <Arrow />
           </a>
           <a className="text-link" href="#about">
-            About the Foundation <span aria-hidden="true">↓</span>
+            About the Foundation <Icon name="arrow-down" size={16} />
           </a>
         </div>
       </div>

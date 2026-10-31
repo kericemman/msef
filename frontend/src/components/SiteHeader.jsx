@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Icon from "./Icon.jsx";
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function SiteHeader() {
         <span className="sr-only">
           {open ? "Close" : "Open"} navigation menu
         </span>
-        <span aria-hidden="true">{open ? "×" : "☰"}</span>
+        <Icon name={open ? "close" : "menu"} size={20} />
       </button>
       <nav
         id="main-nav"
@@ -50,7 +51,7 @@ export default function SiteHeader() {
           Get involved
         </NavLink>
         <NavLink className="nav-contact" to="/contact" onClick={closeMenu}>
-          Contact us <span aria-hidden="true">↗</span>
+          Contact us <Icon name="arrow-up-right" size={16} />
         </NavLink>
       </nav>
     </header>

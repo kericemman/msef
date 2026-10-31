@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import Icon from "../../../components/Icon.jsx";
 
 function TestimonialCarousel({ items, children }) {
   const trackRef = useRef(null);
@@ -22,7 +23,7 @@ function TestimonialCarousel({ items, children }) {
             onClick={() => slide(-1)}
             type="button"
           >
-            ←
+            <Icon name="arrow-left" />
           </button>
           <button
             aria-label="Scroll testimonials forward"
@@ -30,7 +31,7 @@ function TestimonialCarousel({ items, children }) {
             onClick={() => slide(1)}
             type="button"
           >
-            →
+            <Icon name="arrow-right" />
           </button>
       </div>
 

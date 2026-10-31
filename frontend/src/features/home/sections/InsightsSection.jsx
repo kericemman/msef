@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Arrow from "../../../components/Arrow.jsx";
+import Icon from "../../../components/Icon.jsx";
 
 export default function InsightsSection({ insights = [] }) {
   return (
@@ -77,7 +78,7 @@ export default function InsightsSection({ insights = [] }) {
               className="mt-6 grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#F8F6EF] text-xl text-[#9B6B00] sm:mt-0"
               aria-hidden="true"
             >
-              ↗
+              <Icon name="arrow-up-right" size={16} />
             </span>
           </div>
         )}

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import media from "../../content/media-library.json";
 import { programmes } from "../../content/programmes.js";
 import { otherServicesProgrammeContent as content } from "../../content/other-services-programme-content.js";
+import Icon from "../../components/Icon.jsx";
 
 const programme = programmes.find((item) => item.slug === "other-services");
 const collaborationImage = media.assets.find((asset) => asset.id === "MSEF-17");
@@ -39,7 +40,7 @@ export default function OtherServicesProgrammePage() {
                 className="inline-flex min-h-12 items-center justify-center gap-3 rounded-sm bg-[#001F3F] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#12395F]"
                 to="/contact"
               >
-                Discuss a community need <span aria-hidden="true">↗</span>
+                Discuss a community need <Icon name="arrow-up-right" size={16} />
               </Link>
               <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-[#001F3F]/20 px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-white"
@@ -160,7 +161,7 @@ export default function OtherServicesProgrammePage() {
       <section className="border-y border-[#DAA520]/30 bg-[#F8F6EF]">
         <div className="mx-auto grid max-w-7xl gap-4 px-5 py-8 sm:px-8 md:grid-cols-[auto_1fr] md:items-start md:gap-6 lg:px-12">
           <span aria-hidden="true" className="text-xl text-[#8C6200]">
-            ✳
+            <Icon name="info" size={20} />
           </span>
           <div>
             <h2 className="text-lg font-semibold">Specific services and availability</h2>
@@ -185,7 +186,7 @@ export default function OtherServicesProgrammePage() {
             className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-sm bg-[#DAA520] px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-[#E9BB3C]"
             to="/contact"
           >
-            Contact the Foundation <span aria-hidden="true">↗</span>
+            Contact the Foundation <Icon name="arrow-up-right" size={16} />
           </Link>
         </div>
       </section>
@@ -193,10 +194,10 @@ export default function OtherServicesProgrammePage() {
       <div className="bg-[#F5F5F5]">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-5 text-sm font-semibold sm:px-8 lg:px-12">
           <Link className="hover:text-[#8C6200]" to="/programmes/economic-empowerment">
-            ← Previous programme: Economic empowerment
+            <Icon name="arrow-left" size={16} /> Previous programme: Economic empowerment
           </Link>
           <Link className="hover:text-[#8C6200]" to="/programmes">
-            All programmes →
+            All programmes <Icon name="arrow-right" size={16} />
           </Link>
         </div>
       </div>

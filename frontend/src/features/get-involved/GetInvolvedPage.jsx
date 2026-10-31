@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { apiRequest } from "../../services/api.js";
+import Icon from "../../components/Icon.jsx";
 const PRESET_AMOUNTS = [200, 500, 1000, 3000, 5000, 10000];
 const formatAmount = (amount) =>
   new Intl.NumberFormat("en-KE", {
@@ -267,7 +268,7 @@ export default function GetInvolvedPage() {
               {submitting
                 ? "Connecting to Paystack…"
                 : `Continue with ${Number.isSafeInteger(amount) && amount > 0 ? formatAmount(amount) : "donation"}`}
-              {!submitting && <span aria-hidden="true">↗</span>}
+              {!submitting && <Icon name="arrow-up-right" size={16} />}
             </button>
             <p className="mt-4 text-center text-xs leading-5 text-[#667687]">
               By continuing, you’ll be redirected to Paystack’s secure checkout

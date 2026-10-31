@@ -3,6 +3,7 @@ import media from "../../content/media-library.json";
 import { programmes } from "../../content/programmes.js";
 import { environmentProgrammeContent as content } from "../../content/environment-programme-content.js";
 import { useEffect } from "react";
+import Icon from "../../components/Icon.jsx";
 
 
 const programme = programmes.find((item) => item.slug === "environment");
@@ -45,7 +46,7 @@ export default function EnvironmentProgrammePage() {
                 to="/contact"
               >
                 Discuss an environmental partnership{" "}
-                <span aria-hidden="true">↗</span>
+                <Icon name="arrow-up-right" size={16} />
               </Link>
               <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-[#001F3F]/20 px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-white"
@@ -178,7 +179,7 @@ export default function EnvironmentProgrammePage() {
       <section className="border-y border-[#DAA520]/30 bg-[#F8F6EF]">
         <div className="mx-auto grid max-w-7xl gap-4 px-5 py-8 sm:px-8 md:grid-cols-[auto_1fr] md:items-start md:gap-6 lg:px-12">
           <span aria-hidden="true" className="text-xl text-[#8C6200]">
-            ✳
+            <Icon name="info" size={20} />
           </span>
           <div>
             <h2 className="text-lg font-semibold">Activities and partnerships</h2>
@@ -203,7 +204,7 @@ export default function EnvironmentProgrammePage() {
             className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-sm bg-[#DAA520] px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-[#E9BB3C]"
             to="/contact"
           >
-            Contact the Foundation <span aria-hidden="true">↗</span>
+            Contact the Foundation <Icon name="arrow-up-right" size={16} />
           </Link>
         </div>
       </section>
@@ -211,10 +212,10 @@ export default function EnvironmentProgrammePage() {
       <div className="bg-[#F5F5F5]">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-5 text-sm font-semibold sm:px-8 lg:px-12">
           <Link className="hover:text-[#8C6200]" to="/programmes/education-and-skills">
-            ← Previous programme: Education and skills
+            <Icon name="arrow-left" size={16} /> Previous programme: Education and skills
           </Link>
           <Link className="hover:text-[#8C6200]" to="/programmes/economic-empowerment">
-            Next programme: Economic empowerment →
+            Next programme: Economic empowerment <Icon name="arrow-right" size={16} />
           </Link>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { apiRequest } from "../../../services/api.js";
+import Icon from "../../../components/Icon.jsx";
 const initialForm = {
   name: "",
   email: "",
@@ -181,7 +182,7 @@ export default function ContactFormSection() {
             className="mt-6 inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#DAA520] px-6 py-3 text-sm font-bold text-[#001F3F] transition-colors hover:bg-[#edbd42] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white disabled:cursor-not-allowed disabled:opacity-60"
           >
             {submitting ? "Sending message…" : "Send message"}{" "}
-            {!submitting && <span aria-hidden="true">↗</span>}
+            {!submitting && <Icon name="arrow-up-right" size={16} />}
           </button>
         </form>
       </div>

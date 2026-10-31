@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { apiRequest } from "../../../services/api.js";
+import Icon from "../../../components/Icon.jsx";
 
 const currency = (amount, code = "KES") =>
   new Intl.NumberFormat("en-KE", {
@@ -55,7 +56,7 @@ export default function AdminOverview({ onNavigate }) {
       label: "New enquiries",
       value: stats.newMessages,
       detail: "Need a response",
-      icon: "✉",
+      icon: "mail",
       section: "messages",
       tint: "bg-[#E8F1F8] text-[#07518A]",
     },
@@ -63,7 +64,7 @@ export default function AdminOverview({ onNavigate }) {
       label: "Total enquiries",
       value: stats.totalMessages,
       detail: "All messages received",
-      icon: "▤",
+      icon: "message-square",
       section: "messages",
       tint: "bg-[#F3ECFC] text-[#6741A5]",
     },
@@ -71,7 +72,7 @@ export default function AdminOverview({ onNavigate }) {
       label: "Pending donations",
       value: stats.pendingDonations,
       detail: "Awaiting confirmation",
-      icon: "◷",
+      icon: "clock",
       section: "donations",
       tint: "bg-[#FFF3D6] text-[#8a6812]",
     },
@@ -79,7 +80,7 @@ export default function AdminOverview({ onNavigate }) {
       label: "Completed donations",
       value: stats.successfulDonations,
       detail: "Verified by Paystack",
-      icon: "✓",
+      icon: "circle-check",
       section: "donations",
       tint: "bg-[#E6F4EC] text-[#247447]",
     },
@@ -105,14 +106,20 @@ export default function AdminOverview({ onNavigate }) {
             onClick={() => onNavigate("messages")}
             className="min-h-11 rounded-full bg-[#DAA520] px-5 text-sm font-bold text-[#001F3F] transition-colors hover:bg-[#edc44f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            Open enquiries <span aria-hidden="true">→</span>
+            Open enquiries <Icon name="arrow-right" size={16} />
           </button>
           <button
             onClick={refresh}
             disabled={loading}
             className="min-h-11 rounded-full border border-white/30 px-5 text-sm font-semibold text-white transition-colors hover:bg-white/10 disabled:opacity-60"
           >
-            {loading ? "Refreshing…" : "↻ Refresh"}
+            {loading ? (
+              "Refreshing…"
+            ) : (
+              <>
+                <Icon name="refresh" size={15} /> Refresh
+              </>
+            )}
           </button>
         </div>
       </section>
@@ -147,7 +154,7 @@ export default function AdminOverview({ onNavigate }) {
             <span
               className={`grid h-11 w-11 place-items-center rounded-xl text-lg font-bold ${card.tint}`}
             >
-              {card.icon}
+              <Icon name={card.icon} size={20} />
             </span>
             <span className="mt-4 flex items-end justify-between gap-2">
               <span>
@@ -162,7 +169,7 @@ export default function AdminOverview({ onNavigate }) {
                 aria-hidden="true"
                 className="pb-1 text-xl text-[#8a6812] transition-transform group-hover:translate-x-1"
               >
-                →
+                <Icon name="arrow-right" size={18} />
               </span>
             </span>
             <span className="mt-2 block text-xs text-[#667687]">
@@ -185,7 +192,7 @@ export default function AdminOverview({ onNavigate }) {
               onClick={() => onNavigate("messages")}
               className="min-h-9 rounded-full px-3 text-sm font-semibold text-[#001F3F] hover:bg-[#F8F6EF]"
             >
-              View all →
+              View all <Icon name="arrow-right" size={16} />
             </button>
           </div>
           {data.latestMessages.length ? (
@@ -240,7 +247,7 @@ export default function AdminOverview({ onNavigate }) {
               onClick={() => onNavigate("donations")}
               className="min-h-9 rounded-full px-3 text-sm font-semibold text-[#001F3F] hover:bg-[#F8F6EF]"
             >
-              Records →
+              Records <Icon name="arrow-right" size={16} />
             </button>
           </div>
           {received.length ? (
@@ -273,7 +280,7 @@ export default function AdminOverview({ onNavigate }) {
                 aria-hidden="true"
                 className="mx-auto grid h-10 w-10 place-items-center rounded-full bg-[#FFF3D6] text-lg text-[#8a6812]"
               >
-                ♡
+                <Icon name="hand-coins" size={18} />
               </span>
               <p className="mt-3 font-semibold">No confirmed donations yet</p>
               <p className="mt-1 text-sm text-[#667687]">
@@ -310,7 +317,7 @@ export default function AdminOverview({ onNavigate }) {
             className="flex min-h-20 items-center gap-4 rounded-xl border border-[#001F3F]/10 p-4 text-left transition-colors hover:border-[#DAA520]/70 hover:bg-[#FFFCF4]"
           >
             <span className="grid h-11 w-11 place-items-center rounded-xl bg-[#F8F2DF] text-lg text-[#8a6812]">
-              ❞
+              <Icon name="quote" size={18} />
             </span>
             <span className="flex-1">
               <span className="block font-semibold">Testimonials</span>
@@ -318,14 +325,14 @@ export default function AdminOverview({ onNavigate }) {
                 Manage community voices
               </span>
             </span>
-            <span className="text-lg text-[#8a6812]">→</span>
+            <Icon className="text-[#8a6812]" name="arrow-right" size={18} />
           </button>
           <button
             onClick={() => onNavigate("insights")}
             className="flex min-h-20 items-center gap-4 rounded-xl border border-[#001F3F]/10 p-4 text-left transition-colors hover:border-[#DAA520]/70 hover:bg-[#FFFCF4]"
           >
             <span className="grid h-11 w-11 place-items-center rounded-xl bg-[#E8F1F8] text-lg text-[#07518A]">
-              ▤
+              <Icon name="file-text" size={18} />
             </span>
             <span className="flex-1">
               <span className="block font-semibold">Insights</span>
@@ -333,7 +340,7 @@ export default function AdminOverview({ onNavigate }) {
                 Publish news and updates
               </span>
             </span>
-            <span className="text-lg text-[#8a6812]">→</span>
+            <Icon className="text-[#8a6812]" name="arrow-right" size={18} />
           </button>
         </div>
       </section>

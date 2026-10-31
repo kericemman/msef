@@ -5,15 +5,16 @@ import AdminMessages from "./AdminMessages.jsx";
 import AdminDonations from "./AdminDonations.jsx";
 import AdminContentManager from "./AdminContentManager.jsx";
 import AdminNewsletterSubscribers from "./AdminNewsletterSubscribers.jsx";
+import Icon from "../../../components/Icon.jsx";
 const AdminInsights = lazy(() => import("./AdminInsights.jsx"));
 
 const sections = [
-  { id: "overview", label: "Overview", icon: "⌂" },
-  { id: "messages", label: "Enquiries", icon: "✉" },
-  { id: "donations", label: "Donations", icon: "♡" },
-  { id: "subscribers", label: "Insight subscribers", icon: "＠" },
-  { id: "testimonials", label: "Testimonials", icon: "❞" },
-  { id: "insights", label: "Insights", icon: "▤" },
+  { id: "overview", label: "Overview", icon: "layout-dashboard" },
+  { id: "messages", label: "Enquiries", icon: "mail" },
+  { id: "donations", label: "Donations", icon: "hand-coins" },
+  { id: "subscribers", label: "Insight subscribers", icon: "users" },
+  { id: "testimonials", label: "Testimonials", icon: "quote" },
+  { id: "insights", label: "Insights", icon: "file-text" },
 ];
 
 const sectionTitles = {
@@ -88,7 +89,7 @@ export default function AdminDashboard({ user, onSignOut }) {
             onClick={() => setSidebarOpen(false)}
             className="ml-auto grid h-10 w-10 place-items-center rounded-xl text-xl text-white/70 hover:bg-white/10 lg:hidden"
           >
-            ×
+          <Icon name="close" size={18} />
           </button>
         </div>
         <div className="px-4 pt-7">
@@ -107,7 +108,7 @@ export default function AdminDashboard({ user, onSignOut }) {
                   aria-hidden="true"
                   className={`grid h-8 w-8 place-items-center rounded-lg text-lg ${activeSection === section.id ? "bg-[#F8F2DF] text-[#8a6812]" : "text-white/80"}`}
                 >
-                  {section.icon}
+                  <Icon name={section.icon} size={18} />
                 </span>
                 {section.label}
                 {section.id === "messages" && active !== "messages" && (
@@ -129,7 +130,7 @@ export default function AdminDashboard({ user, onSignOut }) {
             className="flex min-h-11 w-full items-center gap-3 rounded-xl px-3 text-sm font-semibold text-white/75 transition-colors hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
           >
             <span aria-hidden="true" className="text-lg">
-              ↪
+              <Icon name="log-out" size={18} />
             </span>{" "}
             Sign out
           </button>
@@ -145,7 +146,7 @@ export default function AdminDashboard({ user, onSignOut }) {
                 onClick={() => setSidebarOpen(true)}
                 className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-[#001F3F]/10 text-xl lg:hidden"
               >
-                ☰
+                <Icon name="menu" size={20} />
               </button>
               <div className="min-w-0">
                 <p className="text-[0.68rem] font-bold uppercase tracking-[0.17em] text-[#8a6812]">
@@ -166,7 +167,7 @@ export default function AdminDashboard({ user, onSignOut }) {
                 rel="noreferrer"
                 className="hidden min-h-10 items-center rounded-full border border-[#001F3F]/15 px-4 text-sm font-semibold hover:bg-[#F8F6EF] sm:inline-flex"
               >
-                View site ↗
+                View site <Icon name="arrow-up-right" size={16} />
               </a>
               <button
                 onClick={handleSignOut}

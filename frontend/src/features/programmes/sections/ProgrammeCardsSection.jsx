@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { programmes } from "../../../content/programmes.js";
+import Icon from "../../../components/Icon.jsx";
 
 export default function ProgrammeCardsSection() {
   return (
@@ -54,7 +55,7 @@ export default function ProgrammeCardsSection() {
                       aria-hidden="true"
                       className="text-base transition-transform group-hover:translate-x-1"
                     >
-                      ↗
+                      <Icon name="arrow-up-right" size={16} />
                     </span>
                   </Link>
                 ) : (
@@ -67,7 +68,7 @@ export default function ProgrammeCardsSection() {
                       aria-hidden="true"
                       className="text-base transition-transform group-hover:translate-x-1"
                     >
-                      ↗
+                      <Icon name="arrow-up-right" size={16} />
                     </span>
                   </Link>
                 )}

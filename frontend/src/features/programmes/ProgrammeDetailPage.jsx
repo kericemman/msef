@@ -8,6 +8,7 @@ import OtherServicesProgrammePage from "./OtherServicesProgrammePage.jsx";
 import YouthRecoveryProgrammePage from "./YouthRecoveryProgrammePage.jsx";
 import "../../styles/programme-detail.css";
 import { useEffect } from "react";
+import Icon from "../../components/Icon.jsx";
 
 export default function ProgrammeDetailPage() {
   useEffect(() => {
@@ -78,18 +79,18 @@ export default function ProgrammeDetailPage() {
           <Link className="button button-gold" to="/contact">
             Ask about this area{" "}
             <span className="arrow" aria-hidden="true">
-              ↗
+              <Icon name="arrow-up-right" size={16} />
             </span>
           </Link>
         </div>
       </section>
       <section className="programme-next">
         <div className="section-wrap">
-          <Link to="/programmes">← Back to all programmes</Link>
+          <Link to="/programmes"><Icon name="arrow-left" size={16} /> Back to all programmes</Link>
           <Link to="/get-involved">
             Explore ways to get involved{" "}
             <span className="arrow" aria-hidden="true">
-              ↗
+              <Icon name="arrow-up-right" size={16} />
             </span>
           </Link>
         </div>

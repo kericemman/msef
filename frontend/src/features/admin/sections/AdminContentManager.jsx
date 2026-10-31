@@ -189,7 +189,7 @@ export default function AdminContentManager({ type }) {
         imageAlt: current.imageAlt || suggestedAlt,
       }));
       setFeedback(
-        `Photo uploaded to Cloudinary${image.uploadSize < image.originalSize ? ` after compression (${(image.originalSize / 1024 / 1024).toFixed(1)} MB → ${(image.uploadSize / 1024 / 1024).toFixed(1)} MB)` : ""}. Please add a clear image description.`,
+        `Photo uploaded to Cloudinary${image.uploadSize < image.originalSize ? ` after compression (${(image.originalSize / 1024 / 1024).toFixed(1)} MB to ${(image.uploadSize / 1024 / 1024).toFixed(1)} MB)` : ""}. Please add a clear image description.`,
       );
     } catch (error) {
       setFeedback(error.message || "Could not upload this photo.");

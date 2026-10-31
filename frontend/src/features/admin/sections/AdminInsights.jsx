@@ -6,6 +6,7 @@ import Image from "@tiptap/extension-image";
 import Youtube from "@tiptap/extension-youtube";
 import { apiRequest } from "../../../services/api.js";
 import { uploadInsightImage } from "../../../services/cloudinaryUpload.js";
+import Icon from "../../../components/Icon.jsx";
 
 const blankInsight = {
   title: "",
@@ -236,7 +237,7 @@ function InsightEditor({ value, onChange, onImageUpload }) {
       label: "Bulleted list",
       action: () => editor.chain().focus().toggleBulletList().run(),
       active: editor.isActive("bulletList"),
-      symbol: "• List",
+      icon: "list",
     },
     {
       label: "Numbered list",
@@ -248,7 +249,7 @@ function InsightEditor({ value, onChange, onImageUpload }) {
       label: "Quote",
       action: () => editor.chain().focus().toggleBlockquote().run(),
       active: editor.isActive("blockquote"),
-      symbol: "❞",
+      icon: "quote",
     },
   ];
 
@@ -336,7 +337,7 @@ function InsightEditor({ value, onChange, onImageUpload }) {
             onClick={tool.action}
             className={`min-h-9 rounded-lg border px-2.5 text-xs transition-colors ${tool.style || ""} ${tool.active ? "border-[#001F3F] bg-[#001F3F] text-white" : "border-transparent text-[#35475a] hover:border-[#001F3F]/15 hover:bg-white"}`}
           >
-            {tool.symbol}
+            {tool.icon ? <Icon name={tool.icon} size={16} /> : tool.symbol}
           </button>
         ))}
         <button
@@ -542,7 +543,7 @@ export default function AdminInsights({
     try {
       const image = await uploadInsightImage(file, setUploadProgress);
       setFeedback(
-        `Image uploaded to Cloudinary${image.uploadSize < image.originalSize ? ` after compression (${(image.originalSize / 1024 / 1024).toFixed(1)} MB → ${(image.uploadSize / 1024 / 1024).toFixed(1)} MB)` : ""}.`,
+        `Image uploaded to Cloudinary${image.uploadSize < image.originalSize ? ` after compression (${(image.originalSize / 1024 / 1024).toFixed(1)} MB to ${(image.uploadSize / 1024 / 1024).toFixed(1)} MB)` : ""}.`,
       );
       return image;
     } finally {
@@ -917,7 +918,7 @@ export default function AdminInsights({
               onClick={onClose}
               className="min-h-11 rounded-full border border-[#001F3F]/15 px-4 text-sm font-semibold hover:bg-[#F8F6EF]"
             >
-              ← Back to insights
+              <Icon name="arrow-left" size={16} /> Back to insights
             </button>
             <p className="hidden text-sm font-semibold text-[#526171] sm:block">
               Morning Star · Insights
@@ -964,7 +965,7 @@ export default function AdminInsights({
           onClick={() => onOpenEditor("new")}
           className="min-h-11 shrink-0 rounded-full bg-[#001F3F] px-5 text-sm font-bold text-white transition-colors hover:bg-[#0b385f]"
         >
-          ＋ New insight
+          <Icon name="plus" size={16} /> New insight
         </button>
       </div>
       {feedback && (
@@ -1010,7 +1011,13 @@ export default function AdminInsights({
           disabled={loading}
           className="rounded-lg px-2 py-1 font-semibold text-[#001F3F] hover:bg-white disabled:opacity-50"
         >
-          {loading ? "Loading…" : "↻ Refresh"}
+          {loading ? (
+            "Loading…"
+          ) : (
+            <>
+              <Icon name="refresh" size={15} /> Refresh
+            </>
+          )}
         </button>
       </div>
       <div className="mt-3 grid gap-3 lg:grid-cols-2 2xl:grid-cols-3">
@@ -1022,7 +1029,7 @@ export default function AdminInsights({
         {!loading && visibleItems.length === 0 && (
           <div className="rounded-2xl border border-dashed border-[#001F3F]/20 bg-white p-8 text-center">
             <span className="mx-auto grid h-12 w-12 place-items-center rounded-2xl bg-[#F8F2DF] text-xl text-[#8a6812]">
-              ▤
+              <Icon name="file-text" size={20} />
             </span>
             <p className="mt-4 font-semibold">
               {items.length ? "No matching insights" : "No insights yet"}
@@ -1088,7 +1095,7 @@ export default function AdminInsights({
                     rel="noreferrer"
                     className="inline-flex min-h-9 items-center rounded-full px-3 text-sm font-semibold text-[#07518A] hover:bg-[#E8F1F8]"
                   >
-                    View ↗
+                    View <Icon name="arrow-up-right" size={16} />
                   </a>
                 )}
               </div>

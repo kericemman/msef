@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { apiRequest } from "../../services/api.js";
+import Icon from "../../components/Icon.jsx";
 
 function formatAmount(amount) {
   return new Intl.NumberFormat("en-KE", {
@@ -58,7 +59,19 @@ export default function DonationCallbackPage() {
           aria-hidden="true"
           className={`mx-auto grid h-16 w-16 place-items-center rounded-full text-3xl font-semibold ${isSuccess ? "bg-emerald-50 text-emerald-700" : isFailed ? "bg-red-50 text-red-700" : "bg-blue-50 text-blue-700"}`}
         >
-          {result.status === "checking" ? "…" : isSuccess ? "✓" : isFailed ? "!" : "i"}
+          <Icon
+            className={result.status === "checking" ? "animate-spin" : ""}
+            name={
+              result.status === "checking"
+                ? "refresh"
+                : isSuccess
+                  ? "circle-check"
+                  : isFailed
+                    ? "circle-alert"
+                    : "info"
+            }
+            size={28}
+          />
         </span>
         <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-[#8a6812]">
           Donation payment

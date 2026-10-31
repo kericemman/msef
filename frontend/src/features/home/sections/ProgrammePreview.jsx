@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { programmes } from "../../../content/programmes.js";
 import Arrow from "../../../components/Arrow.jsx";
+import Icon from "../../../components/Icon.jsx";
 
 export default function ProgrammePreview() {
   return (
@@ -39,7 +40,7 @@ export default function ProgrammePreview() {
                   className="grid h-9 w-9 place-items-center rounded-full border border-[#DAA520] text-[#9B6B00] transition-colors group-hover:bg-[#DAA520] group-hover:text-[#001F3F]"
                   aria-hidden="true"
                 >
-                  ↗
+                  <Icon name="arrow-up-right" size={16} />
                 </span>
               </div>
               <h3 className="mb-3 !text-base font-semibold leading-snug tracking-tight sm:!text-lg">
@@ -49,7 +50,7 @@ export default function ProgrammePreview() {
                 {programme.shortDescription}
               </p>
               <span className="mt-auto border-t border-[#E5E8EA] pt-4 text-xs font-semibold uppercase tracking-widest text-[#9B6B00] group-hover:border-white/20">
-                Explore area <span className="ml-2">→</span>
+                Explore area <Icon name="arrow-right" className="ml-2" size={16} />
               </span>
             </Link>
           ))}

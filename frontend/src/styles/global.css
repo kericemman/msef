@@ -1290,12 +1290,16 @@ button:focus-visible {
   color: #4b5d6e;
 }
 .approach-list li::before {
-  content: "✳";
+  display: block;
+  content: "";
   position: absolute;
   left: 0;
   top: 11px;
   color: #9b6b00;
-  font-size: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: #9b6b00;
 }
 .testimonials-section {
   background: #f7f3e9;

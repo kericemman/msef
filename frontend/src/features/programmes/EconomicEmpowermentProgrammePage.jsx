@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import media from "../../content/media-library.json";
 import { programmes } from "../../content/programmes.js";
 import { economicEmpowermentProgrammeContent as content } from "../../content/economic-empowerment-programme-content.js";
+import Icon from "../../components/Icon.jsx";
 
 const programme = programmes.find((item) => item.slug === "economic-empowerment");
 const financialLearningImage = media.assets.find((asset) => asset.id === "MSEF-14");
@@ -39,7 +40,7 @@ export default function EconomicEmpowermentProgrammePage() {
                 className="inline-flex min-h-12 items-center justify-center gap-3 rounded-sm bg-[#001F3F] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#12395F]"
                 to="/contact"
               >
-                Discuss an economic partnership <span aria-hidden="true">↗</span>
+                Discuss an economic partnership <Icon name="arrow-up-right" size={16} />
               </Link>
               <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-[#001F3F]/20 px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-white"
@@ -205,7 +206,7 @@ export default function EconomicEmpowermentProgrammePage() {
             className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-sm bg-[#DAA520] px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-[#E9BB3C]"
             to="/contact"
           >
-            Contact the Foundation <span aria-hidden="true">↗</span>
+            Contact the Foundation <Icon name="arrow-up-right" size={16} />
           </Link>
         </div>
       </section>
@@ -213,10 +214,10 @@ export default function EconomicEmpowermentProgrammePage() {
       <div className="bg-[#F5F5F5]">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-5 text-sm font-semibold sm:px-8 lg:px-12">
           <Link className="hover:text-[#8C6200]" to="/programmes/environment">
-            ← Previous programme: Environment
+            <Icon name="arrow-left" size={16} /> Previous programme: Environment
           </Link>
           <Link className="hover:text-[#8C6200]" to="/programmes/other-services">
-            Next programme: Other services →
+            Next programme: Other services <Icon name="arrow-right" size={16} />
           </Link>
         </div>
       </div>

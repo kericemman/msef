@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import DOMPurify from "dompurify";
 import { apiRequest } from "../../services/api.js";
 import InsightSubscriptionSection from "./InsightSubscriptionSection.jsx";
+import Icon from "../../components/Icon.jsx";
 
 function sanitizeArticleBody(html) {
   const safe = DOMPurify.sanitize(html, {
@@ -135,7 +136,7 @@ export default function InsightDetailPage() {
           to="/#insights"
           className="inline-flex min-h-11 items-center text-sm font-semibold text-[#526171] underline decoration-[#DAA520] underline-offset-4"
         >
-          ← Back to insights
+          <Icon name="arrow-left" size={16} /> Back to insights
         </Link>
         <header className="mt-8 border-b border-[#001F3F]/15 pb-8">
           {insight.category && (
@@ -193,7 +194,7 @@ export default function InsightDetailPage() {
             >
               All insights{" "}
               <span aria-hidden="true" className="ml-2">
-                →
+                <Icon name="arrow-right" size={16} />
               </span>
             </Link>
           </div>
@@ -227,7 +228,7 @@ export default function InsightDetailPage() {
                     to={`/insights/${item.slug}`}
                     className="mt-4 inline-flex min-h-10 items-center gap-2 text-sm font-semibold text-[#07518A] underline decoration-[#07518A]/40 underline-offset-4 hover:text-[#003B66]"
                   >
-                    Read insight <span aria-hidden="true">→</span>
+                    Read insight <Icon name="arrow-right" size={16} />
                   </Link>
                 </div>
               </article>

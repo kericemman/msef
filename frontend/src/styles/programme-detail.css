@@ -87,11 +87,15 @@
   color: #455565;
 }
 .programme-detail-copy li::before {
-  content: "✳";
+  display: block;
+  content: "";
   position: absolute;
   left: 0;
   top: 13px;
-  font-size: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: #a87700;
   color: #a87700;
 }
 .programme-note {

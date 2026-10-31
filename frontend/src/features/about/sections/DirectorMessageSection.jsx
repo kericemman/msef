@@ -1,3 +1,5 @@
+import Icon from "../../../components/Icon.jsx";
+
 export default function DirectorMessageSection() {
   return (
     <section className="bg-[#F8F6EF] px-5 py-14 sm:px-8 md:py-20 lg:px-12">
@@ -53,7 +55,7 @@ export default function DirectorMessageSection() {
           >
             Connect with Director{" "}
             <span aria-hidden="true" className="text-[#9B6B00]">
-              ↗
+              <Icon name="arrow-up-right" size={16} />
             </span>
           </a>
         </div>

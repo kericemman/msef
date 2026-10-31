@@ -3,6 +3,7 @@ import media from "../../content/media-library.json";
 import { programmes } from "../../content/programmes.js";
 import { youthRecoveryProgrammeContent as content } from "../../content/youth-recovery-programme-content.js";
 import { useEffect } from "react";
+import Icon from "../../components/Icon.jsx";
 
 
 const programme = programmes.find((item) => item.slug === "youth-and-recovery");
@@ -44,7 +45,7 @@ export default function YouthRecoveryProgrammePage() {
                 className="inline-flex min-h-12 items-center justify-center gap-3 rounded-sm bg-[#001F3F] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#12395F]"
                 to="/contact"
               >
-                Ask about recovery support <span aria-hidden="true">↗</span>
+                Ask about recovery support <Icon name="arrow-up-right" size={16} />
               </Link>
               <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-sm border border-[#001F3F]/20 px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-white"
@@ -119,7 +120,7 @@ export default function YouthRecoveryProgrammePage() {
                       aria-hidden="true"
                       className="mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-[#DAA520]/15 text-[10px] font-bold leading-none text-[#8C6200]"
                     >
-                      ✓
+                      <Icon name="check" size={14} />
                     </span>
                     <span>{highlight}</span>
                   </li>
@@ -175,7 +176,7 @@ export default function YouthRecoveryProgrammePage() {
             className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 rounded-sm bg-[#DAA520] px-5 py-3 text-sm font-semibold text-[#001F3F] transition hover:bg-[#E9BB3C]"
             to="/contact"
           >
-            Contact the Foundation <span aria-hidden="true">↗</span>
+            Contact the Foundation <Icon name="arrow-up-right" size={16} />
           </Link>
         </div>
       </section>
@@ -183,10 +184,10 @@ export default function YouthRecoveryProgrammePage() {
       <div className="bg-[#F5F5F5]">
         <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-5 text-sm font-semibold sm:px-8 lg:px-12">
           <Link className="hover:text-[#8C6200]" to="/programmes/agriculture">
-            ← Previous programme: Agriculture
+            <Icon name="arrow-left" size={16} /> Previous programme: Agriculture
           </Link>
           <Link className="hover:text-[#8C6200]" to="/programmes/education-and-skills">
-            Next programme: Education and skills →
+            Next programme: Education and skills <Icon name="arrow-right" size={16} />
           </Link>
         </div>
       </div>

@@ -7,7 +7,6 @@ export const programmes = [
     slug: "agriculture",
     number: "01",
     title: "Modern Agriculture and Agribusiness Development",
-    icon: "✳",
     shortDescription:
       "The Foundation aims to improve agricultural productivity and profitability by promoting modern farming technologies and practices from planting to marketing.",
     previewImage: image("MSEF-06"),
@@ -27,7 +26,6 @@ export const programmes = [
     slug: "youth-and-recovery",
     number: "02",
     title: "Alcohol and Substance Abuse Mitigation and Youth Empowerment",
-    icon: "↗",
     shortDescription:
       "The Foundation seeks to reduce alcohol and substance abuse among young people and other vulnerable members of society through prevention, rehabilitation, counseling, mentorship, and community support.",
     previewImage: image("MSEF-15"),
@@ -45,7 +43,6 @@ export const programmes = [
     slug: "education-and-skills",
     number: "03",
     title: "Education, Skills Development, and Vocational Training",
-    icon: "▤",
     shortDescription:
       "The Foundation aims to empower young people and other community members with practical skills that improve employability, entrepreneurship, and self-reliance.",
     previewImage: image("MSEF-16"),
@@ -63,7 +60,6 @@ export const programmes = [
     slug: "environment",
     number: "04",
     title: "Environmental Conservation and Climate Change Mitigation",
-    icon: "⌁",
     shortDescription:
       "The Foundation seeks to protect the environment, promote sustainable resource use, and help communities respond to the challenges of climate change.",
     previewImage: image("MSEF-09"),
@@ -83,7 +79,6 @@ export const programmes = [
     slug: "economic-empowerment",
     number: "05",
     title: "Economic Empowerment, Savings, Credit, and Investment",
-    icon: "◌",
     shortDescription:
       "The Foundation aims to promote financial inclusion and economic independence by encouraging collective savings, responsible lending, entrepreneurship, and investment.",
     previewImage: image("MSEF-14"),
@@ -101,7 +96,6 @@ export const programmes = [
     slug: "other-services",
     number: "06",
     title: "Other Services",
-    icon: "＋",
     shortDescription:
       "Alongside our core programme areas, the Foundation supports related community needs through responsive services and partnerships.",
     previewImage: image("MSEF-17"),

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Icon from "../../components/Icon.jsx";
 
 const sections = [
   {
@@ -68,7 +69,7 @@ export default function PrivacyPolicyPage() {
           to="/"
           className="inline-flex min-h-11 items-center text-sm font-semibold text-[#526171] underline decoration-[#DAA520] underline-offset-4"
         >
-          ← Return to the website
+          <Icon name="arrow-left" size={16} /> Return to the website
         </Link>
         <header className="mt-8 border-b border-[#001F3F]/15 pb-8">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6812] sm:text-sm">
