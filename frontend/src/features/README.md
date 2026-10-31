@@ -1,0 +1,2 @@
+Group page sections by visitor-facing feature or capability: `home/`, `about/`, `programmes/`, `contact/`, `get-involved/`, `insights/`, and `admin/`.
+`home/HomePage.jsx` composes the requested homepage sections and loads published testimonials and insights from the public API. `admin/` contains the sign-in and protected dashboard views. Public programme data remains in `src/content/programmes.js`.

@@ -1,0 +1,1 @@
+Put reviewed website copy and structured programme/page data here. `programmes.js` contains the current first-pass programme copy; availability and service details are not yet approved. `media-library.json` contains uploaded Cloudinary assets, source URLs, optimized crop URLs, alt-text drafts, and per-image publication notes. Keep copy out of large presentation components.

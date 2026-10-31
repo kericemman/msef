@@ -1,0 +1,1 @@
+Provider adapters live here and keep vendor API calls out of route handlers and controllers. `resend.js` sends contact form notifications using credentials from the backend environment. Cloudinary integration remains for future server-managed media uploads; public site images currently use the Cloudinary URLs in the content manifest.

@@ -1,0 +1,1 @@
+`App.jsx` declares the React Router routes. `layouts/SiteLayout.jsx` provides the shared header, main content outlet, and footer. Home, About, Programmes and programme details, Get involved, and Contact are routed here. The Get Involved page initializes donations through the backend API; Paystack secrets remain server-side.

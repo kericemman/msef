@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "provider": "cloudinary",
+  "assets": [
+    {
+      "id": "MSEF-01",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 08.34.53.jpeg",
+      "publicId": "msef/site/about/organization-team",
+      "dimensions": { "width": 1280, "height": 1072 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744504/msef/site/about/organization-team.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_crop,w_1280,h_960,x_0,y_0/c_limit,w_1200,h_900/f_auto,q_auto/v1792744504/msef/site/about/organization-team.jpg",
+      "alt": "MSEF team members standing together outside a building with a Morning Star Empowerment Foundation sign.",
+      "placement": "About page; team/community image",
+      "publicationNote": "Confirm group photo permission before public display. The crop removes the camera strip at the bottom while keeping the group and sign."
+    },
+    {
+      "id": "MSEF-02",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 08.50.18.jpeg",
+      "publicId": "msef/site/team/representative-portrait",
+      "dimensions": { "width": 1122, "height": 1402 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744506/msef/site/team/representative-portrait.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_800,h_1000,g_face,f_auto,q_auto/v1792744506/msef/site/team/representative-portrait.jpg",
+      "alt": "Portrait of an MSEF representative.",
+      "placement": "About or team section; portrait",
+      "publicationNote": "Confirm the person’s name, role, and portrait permission before adding a caption or publishing."
+    },
+    {
+      "id": "MSEF-03",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 08.51.01.jpeg",
+      "publicId": "msef/site/about/foundation-building",
+      "dimensions": { "width": 1600, "height": 1200 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744508/msef/site/about/foundation-building.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1200,h_900,f_auto,q_auto/v1792744508/msef/site/about/foundation-building.jpg",
+      "alt": "Exterior of a building identified by its sign as the Morning Star rehabilitation and counseling centre.",
+      "placement": "About page; facility image",
+      "publicationNote": "Keep the full sign visible. Confirm the facility and current service status before public display."
+    },
+    {
+      "id": "MSEF-04",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 08.54.52.jpeg",
+      "publicId": "msef/site/programmes/youth-and-recovery/recovery-room",
+      "dimensions": { "width": 1200, "height": 1600 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744510/msef/site/programmes/youth-and-recovery/recovery-room.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_900,h_1200,f_auto,q_auto/v1792744510/msef/site/programmes/youth-and-recovery/recovery-room.jpg",
+      "alt": "Interior room showing beds and medical equipment.",
+      "placement": "Youth and recovery page; facility image",
+      "publicationNote": "Preserve the portrait room view. Hold from public display until facility/service status and context are confirmed."
+    },
+    {
+      "id": "MSEF-05",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 08.56.40.jpeg",
+      "publicId": "msef/site/team/team-outdoors",
+      "dimensions": { "width": 720, "height": 540 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744514/msef/site/team/team-outdoors.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_720,h_540,f_auto,q_auto/v1792744514/msef/site/team/team-outdoors.jpg",
+      "alt": "MSEF team members standing together outdoors.",
+      "placement": "About or team section; small 4:3 image",
+      "publicationNote": "Source is 720 × 540; do not upscale. Confirm identities/roles and informed permission, especially if anyone is a minor or service beneficiary."
+    },
+    {
+      "id": "MSEF-06",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.04.00.jpeg",
+      "publicId": "msef/site/programmes/agriculture/maize-field",
+      "dimensions": { "width": 1599, "height": 720 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744517/msef/site/programmes/agriculture/maize-field.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_1280,h_720,g_auto,f_auto,q_auto/v1792744517/msef/site/programmes/agriculture/maize-field.jpg",
+      "alt": "Farmer standing in a cultivated maize field.",
+      "placement": "Agriculture programme banner",
+      "publicationNote": "Wide crop focuses on the farmer while retaining the field context; confirm permission and that this represents MSEF-related work."
+    },
+    {
+      "id": "MSEF-07",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.04.06.jpeg",
+      "publicId": "msef/site/programmes/youth-and-recovery/community-group-formal",
+      "dimensions": { "width": 1280, "height": 960 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744519/msef/site/programmes/youth-and-recovery/community-group-formal.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1280,h_960,f_auto,q_auto/v1792744519/msef/site/programmes/youth-and-recovery/community-group-formal.jpg",
+      "alt": "A group of young men and adults standing together outdoors.",
+      "placement": "Youth empowerment page; group image",
+      "publicationNote": "Keep the full 4:3 group uncropped. Confirm event context, participant permission, and ages before public display."
+    },
+    {
+      "id": "MSEF-08",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.05.43.jpeg",
+      "publicId": "msef/site/programmes/youth-and-recovery/community-cultural-gathering",
+      "dimensions": { "width": 1280, "height": 960 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744522/msef/site/programmes/youth-and-recovery/community-cultural-gathering.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1280,h_960,f_auto,q_auto/v1792744522/msef/site/programmes/youth-and-recovery/community-cultural-gathering.jpg",
+      "alt": "Community members wearing traditional clothing at an outdoor gathering.",
+      "placement": "Youth empowerment page; cultural gathering image",
+      "publicationNote": "Keep the full 4:3 group uncropped. Confirm event context, informed consent, safeguarding, and public-use suitability before display."
+    },
+    {
+      "id": "MSEF-09",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.18.31.jpeg",
+      "publicId": "msef/site/programmes/environment/community-tree-planting",
+      "dimensions": { "width": 1280, "height": 960 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744524/msef/site/programmes/environment/community-tree-planting.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1280,h_960,f_auto,q_auto/v1792744524/msef/site/programmes/environment/community-tree-planting.jpg",
+      "alt": "Community members planting a young tree outside a building.",
+      "placement": "Environment programme page; tree-planting image",
+      "publicationNote": "Preserve the original 4:3 composition; the scene is tilted, so do not rotate and crop without reviewing the resulting frame. Confirm participant permission and event context."
+    },
+    {
+      "id": "MSEF-10",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.18.32.jpeg",
+      "publicId": "msef/site/team/representative-speaking",
+      "dimensions": { "width": 960, "height": 1095 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744526/msef/site/team/representative-speaking.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_800,h_1000,g_face,f_auto,q_auto/v1792744526/msef/site/team/representative-speaking.jpg",
+      "alt": "MSEF representative speaking into a microphone at an event.",
+      "placement": "About or team section; speaker portrait",
+      "publicationNote": "Confirm the person’s name, role, and permission before captioning or publishing."
+    },
+    {
+      "id": "MSEF-11",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 09.18.40.jpeg",
+      "publicId": "msef/site/about/foundation-team-building",
+      "dimensions": { "width": 2892, "height": 4160 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744532/msef/site/about/foundation-team-building.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_900,h_1200,g_north,f_auto,q_auto/v1792744532/msef/site/about/foundation-team-building.jpg",
+      "alt": "Group standing outside a Morning Star Foundation building.",
+      "placement": "About page; portrait facility/team image",
+      "publicationNote": "Portrait rendition trims excess foreground while keeping the building and group; review crop before use and confirm event/facility context and group permission."
+    },
+    {
+      "id": "MSEF-12",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 12.18.42.jpeg",
+      "publicId": "msef/site/shared/logo-artwork-source",
+      "dimensions": { "width": 1269, "height": 1240 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1792744535/msef/site/shared/logo-artwork-source.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1000,h_1000,f_auto,q_auto/v1792744535/msef/site/shared/logo-artwork-source.jpg",
+      "alt": "Morning Star Empowerment Foundation logo artwork.",
+      "placement": "Reference only; not for the production header yet",
+      "publicationNote": "The JPEG visibly includes a checkerboard background and 3D text. Keep as supplied reference; request/approve a clean transparent PNG or vector before using as the site logo."
+    },
+    {
+      "id": "MSEF-13",
+      "sourceFilename": "Six Men Outside Morning Star Centre-1.png",
+      "publicId": "msef/site/home/thskiqulxtkbvvdy9euh",
+      "dimensions": { "width": 1511, "height": 1041 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1793006769/msef/site/home/thskiqulxtkbvvdy9euh.png",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_limit,w_1511,f_auto,q_auto/v1793006769/msef/site/home/thskiqulxtkbvvdy9euh.png",
+      "alt": "Morning Star staff and community members standing outside the Foundation’s rehabilitation and counseling centre.",
+      "placement": "Home page hero",
+      "publicationNote": "Keep the people and rehabilitation centre sign visible in responsive hero crops."
+    },
+    {
+      "id": "MSEF-14",
+      "sourceFilename": "Kenyan Community Building Financial Futures.png",
+      "publicId": "msef/site/programmes/economic-empowerment/financial-literacy-workshop",
+      "dimensions": { "width": 1448, "height": 1086 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1793010282/msef/site/programmes/economic-empowerment/financial-literacy-workshop.png",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_900,h_675,g_auto,f_auto,q_auto/v1793010282/msef/site/programmes/economic-empowerment/financial-literacy-workshop.png",
+      "alt": "Community members discussing financial plans together around a table.",
+      "placement": "Economic Empowerment programme card",
+      "publicationNote": "4:3 optimized crop for the programme card."
+    },
+    {
+      "id": "MSEF-15",
+      "sourceFilename": "images (1).jpeg",
+      "publicId": "msef/site/programmes/youth-and-recovery/substance-use-awareness",
+      "dimensions": { "width": 547, "height": 365 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1793010284/msef/site/programmes/youth-and-recovery/substance-use-awareness.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_486,h_365,g_auto,f_auto,q_auto/v1793010284/msef/site/programmes/youth-and-recovery/substance-use-awareness.jpg",
+      "alt": "A person’s hands beside pills on a table, illustrating the risks of substance misuse.",
+      "placement": "Alcohol and Substance Abuse programme card",
+      "publicationNote": "Keeps the medication and hands in view in a 4:3 card crop."
+    },
+    {
+      "id": "MSEF-16",
+      "sourceFilename": "Community gathering in blue chairs-2.png",
+      "publicId": "msef/site/programmes/education-and-skills/community-education-gathering",
+      "dimensions": { "width": 1492, "height": 1054 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1793010287/msef/site/programmes/education-and-skills/community-education-gathering.png",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_fill,w_900,h_675,g_auto,f_auto,q_auto/v1793010287/msef/site/programmes/education-and-skills/community-education-gathering.png",
+      "alt": "Community members gathered in blue chairs for a learning session.",
+      "placement": "Education and Skills programme card",
+      "publicationNote": "4:3 optimized crop for the programme card."
+    },
+    {
+      "id": "MSEF-17",
+      "sourceFilename": "images (2).jpeg",
+      "publicId": "msef/site/programmes/other-services/community-collaboration-puzzle",
+      "dimensions": { "width": 608, "height": 504 },
+      "sourceUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/v1793010737/msef/site/programmes/other-services/community-collaboration-puzzle.jpg",
+      "optimizedUrl": "https://res.cloudinary.com/gfkhcjc0/image/upload/c_pad,w_608,h_456,b_auto,f_auto,q_auto/v1793010737/msef/site/programmes/other-services/community-collaboration-puzzle.jpg",
+      "alt": "Illustration of people joining colorful puzzle pieces together to represent community collaboration.",
+      "placement": "Other Services programme card",
+      "publicationNote": "The 4:3 padded delivery preserves the full square illustration without cropping the puzzle or hands."
+    }
+  ]
+}

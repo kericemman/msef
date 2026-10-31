@@ -1,0 +1,1 @@
+`api.js` centralizes requests to the backend using `VITE_API_BASE_URL` and sends same-origin admin session cookies. Only public Cloudinary delivery URLs may appear in browser code; never put API secrets here.

@@ -1,0 +1,1 @@
+Place small static files here only when they should ship with the app. New photography will be uploaded to Cloudinary after review and referenced by its optimized delivery URL. Do not copy legacy images here or add unapproved assets. Track intake, approval, alt text, and final URLs in `docs/ASSET_REGISTER.md`.
